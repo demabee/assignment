@@ -4,9 +4,11 @@ import { Input, Icon } from '@rneui/themed';
 import { commonStyles } from '../styles';
 import { CommonActions, useNavigation } from '@react-navigation/native';
 import { FilterContext } from '../context/FilterContext';
+import { useTranslation } from 'react-i18next';
 
 const SearchInput: React.FC = () => {
   const navigation = useNavigation();
+  const { t } = useTranslation();
   const {
     setCategoryId,
     setSearchQuery,
@@ -52,7 +54,7 @@ const SearchInput: React.FC = () => {
       <Input
         containerStyle={styles.searchContainerStyle}
         inputContainerStyle={styles.inputContainer}
-        placeholder="Search products..."
+        placeholder={t('common:search_products')}
         value={searchInput}
         onChangeText={text => {
           setSearchInput(text);

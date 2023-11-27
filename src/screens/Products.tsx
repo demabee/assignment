@@ -6,7 +6,8 @@ import {
   View,
   ActivityIndicator,
   ScrollView,
-  TouchableOpacity
+  TouchableOpacity,
+  Dimensions
 } from 'react-native';
 import { useContext, useEffect } from 'react';
 import { FilterContext } from '../context/FilterContext';
@@ -137,7 +138,8 @@ const styles = StyleSheet.create({
     borderRadius: 10
   },
   name: {
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    width: Dimensions.get('window').width * 0.4
   },
   price: {
     fontWeight: 'bold'

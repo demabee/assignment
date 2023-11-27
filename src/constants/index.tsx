@@ -27,10 +27,10 @@ export const productCategories = [
   { id: 12, name: 'Health and Wellness', image: healthAndWellness }
 ];
 
-export const productsData: ProductsType[] = [
+export const productsData = (t: any): ProductsType[] => [
   {
     id: 1,
-    name: 'Toolbox',
+    name: t('common:products.toolbox'),
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     price: 13.0,
     currency: '$',
@@ -39,7 +39,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 2,
-    name: 'Beverages',
+    name: t('common:products.beverages'),
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     price: 9.5,
@@ -49,7 +49,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 3,
-    name: 'Accessories',
+    name: t('common:products.accessories'),
     description:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     price: 20.0,
@@ -59,7 +59,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 4,
-    name: 'Garden Tools',
+    name: t('common:products.garden_tools'),
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     price: 15.75,
@@ -69,7 +69,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 5,
-    name: 'Home Decor',
+    name: t('common:products.home_decor'),
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     price: 8.99,
@@ -79,7 +79,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 6,
-    name: 'Electronics',
+    name: t('common:products.electronics'),
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     price: 29.99,
     currency: '$',
@@ -88,7 +88,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 7,
-    name: 'Kitchen Appliances',
+    name: t('common:products.kitchen_appliances'),
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     price: 45.5,
@@ -98,7 +98,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 8,
-    name: 'Outdoor Furniture',
+    name: t('common:products.outdoor_furniture'),
     description:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     price: 89.99,
@@ -108,7 +108,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 9,
-    name: 'Clothing',
+    name: t('common:products.clothing'),
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     price: 25.0,
@@ -118,7 +118,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 10,
-    name: 'Toys',
+    name: t('common:products.toys'),
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     price: 12.5,
@@ -128,7 +128,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 11,
-    name: 'Power Tools',
+    name: t('common:products.power_tools'),
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     price: 149.99,
     currency: '$',
@@ -137,7 +137,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 12,
-    name: 'Fitness Equipment',
+    name: t('common:products.fitness_equipment'),
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     price: 79.95,
@@ -147,7 +147,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 13,
-    name: 'Smart Home Devices',
+    name: t('common:products.smart_home_devices'),
     description:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     price: 199.99,
@@ -157,7 +157,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 14,
-    name: 'Pet Supplies',
+    name: t('common:products.pet_supplies'),
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     price: 29.5,
@@ -167,7 +167,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 15,
-    name: 'Art and Craft Supplies',
+    name: t('common:products.art_and_craft_supplies'),
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     price: 14.99,
@@ -177,7 +177,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 16,
-    name: 'Home Security Systems',
+    name: t('common:products.home_security_systems'),
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     price: 299.99,
     currency: '$',
@@ -186,7 +186,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 17,
-    name: 'Books',
+    name: t('common:products.books'),
     description:
       'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     price: 9.99,
@@ -196,7 +196,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 18,
-    name: 'Car Accessories',
+    name: t('common:products.car_accessories'),
     description:
       'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     price: 34.75,
@@ -206,7 +206,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 19,
-    name: 'Office Supplies',
+    name: t('common:products.office_supplies'),
     description:
       'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
     price: 19.99,
@@ -216,7 +216,7 @@ export const productsData: ProductsType[] = [
   },
   {
     id: 20,
-    name: 'Musical Instruments',
+    name: t('common:products.musical_instrument'),
     description:
       'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     price: 129.0,
@@ -232,3 +232,8 @@ export const userData = {
   position: 'Developer',
   username: 'demabee'
 };
+
+export const languageData = [
+  { label: 'English', value: 'en' },
+  { label: 'France', value: 'fr' }
+];

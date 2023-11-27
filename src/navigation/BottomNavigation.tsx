@@ -4,8 +4,10 @@ import ProfileNavigation from './stack/ProfileNavigation';
 import SettingsNavigation from './stack/SettingsNavigation';
 import { Icon } from '@rneui/themed';
 import Products from '../screens/Products';
+import { useTranslation } from 'react-i18next';
 
 const BottomNavigation = () => {
+  const { t } = useTranslation();
   const Tab = createBottomTabNavigator();
   return (
     <Tab.Navigator
@@ -17,7 +19,7 @@ const BottomNavigation = () => {
         name="HomeStack"
         component={HomeNavigation}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: t('navigation:home'),
           tabBarIcon: ({ focused }) => (
             <Icon
               type="font-awesome"
@@ -31,7 +33,7 @@ const BottomNavigation = () => {
         name="SettingsStack"
         component={SettingsNavigation}
         options={{
-          tabBarLabel: 'Settings',
+          tabBarLabel: t('navigation:settings'),
           tabBarIcon: ({ focused }) => (
             <Icon
               type="feather"
@@ -45,7 +47,7 @@ const BottomNavigation = () => {
         name="ProfileStack"
         component={ProfileNavigation}
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: t('navigation:profile'),
           tabBarIcon: ({ focused }) => (
             <Icon type="feather" name="user" color={focused ? 'blue' : ''} />
           )

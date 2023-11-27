@@ -11,9 +11,11 @@ import useGetProductCategories from '../hooks/products/useGetProductCategories';
 import { type CategoriesType } from 'types';
 import { CommonActions, useNavigation } from '@react-navigation/native';
 import { FilterContext } from '../context/FilterContext';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const navigation = useNavigation();
+  const { t } = useTranslation();
   const { setCategoryId, setProductsScreenFocused } = useContext(FilterContext);
   const { data, fetchData } = useGetProductCategories();
 
@@ -34,7 +36,7 @@ const Home = () => {
       onPress={() => handleGoToProductsScreen(item.id)}
     >
       <Image source={item.image} style={styles.image} />
-      <Text style={styles.name}>{item.name}</Text>
+      <Text style={styles.name}>{t(`common:category.${item.name.replace(/ /g, '_').toLowerCase()}`)}</Text>
     </TouchableOpacity>
   );
 

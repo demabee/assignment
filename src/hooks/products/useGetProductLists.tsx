@@ -2,8 +2,10 @@ import { useCallback, useState } from 'react';
 import { type ProductsType } from 'types';
 import { debounce } from '../../helpers';
 import { fetchProductLists } from '../../api';
+import { useTranslation } from 'react-i18next';
 
 export default function useGetProductLists () {
+  const { t } = useTranslation();
   const [loading, setLoading] = useState<boolean>(false);
   const [products, setProducts] = useState<ProductsType[]>([]);
   const [totalPages, setTotalPages] = useState<number>(1);
@@ -19,6 +21,7 @@ export default function useGetProductLists () {
       try {
         setLoading(true);
         const result = await fetchProductLists(
+          t,
           page,
           searchQuery,
           categoryId,

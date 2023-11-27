@@ -14,12 +14,13 @@ export const fetchProductCategories = async () => {
 };
 
 export const fetchProductLists = async (
+  t: Function,
   page: number = 1,
   searchQuery: string,
   categoryId?: number | null,
   itemsPerPage: number = 5,
 ) => {
-  let filteredData = productsData;
+  let filteredData = productsData(t);
   if (searchQuery.trim() !== '') {
     filteredData = filteredData.filter((item: ProductsType) =>
       item.name.toLowerCase().includes(searchQuery.toLowerCase()),
