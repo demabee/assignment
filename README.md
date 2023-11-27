@@ -3,7 +3,6 @@
   - [Installation](#installation)
 - [Usage](#usage)
 - [Building with EAS Build](#building-with-eas-build)
-  - [Reminder: Update Build Number and Version Code](#reminder-update-build-number-and-version-code)
 - [Linting](#linting)
 - [Built With](#built-with)
 
