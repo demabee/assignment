@@ -1,0 +1,6 @@
+{
+  "prettier.arrowParens": "avoid",
+  "prettier.configPath": "/Users/andredemavivas/Dev/prettier/.prettierrc.js",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true
+}
