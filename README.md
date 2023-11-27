@@ -1,3 +1,12 @@
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Building with EAS Build](#building-with-eas-build)
+  - [Reminder: Update Build Number and Version Code](#reminder-update-build-number-and-version-code)
+- [Linting](#linting)
+- [Built With](#built-with)
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -10,19 +19,19 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
 ```bash
-  git clone https://github.com/demabee/assignment.git
+git clone https://github.com/demabee/assignment.git
 ```
 
 2. Navigate to the project directory
 
 ```bash
-  cd assignment
+cd assignment
 ```
 
 3. Install dependencies
 
 ```bash
-  npm i
+npm i
 ```
 
 ### Usage
@@ -30,7 +39,7 @@ Before you begin, ensure you have met the following requirements:
 1. Start the development server
 
 ```bash
-  npx expo start
+npx expo start
 ```
 
 ### Building with EAS Build
@@ -40,7 +49,7 @@ When you are ready to build your project for production or deployment using EAS 
 Run the following command to build your project using EAS Build:
 
 ```bash
-  eas build --platform [ios/android]
+eas build --platform [ios/android]
 ```
 
 Reminder: Update Build Number and Version Code
@@ -51,7 +60,7 @@ Before creating a new build, always remember to update the build number for iOS 
 1. Run ESLint
 
 ```bash
-  npm run lint
+npm run lint
 ```
 
 2. Run ESLint with auto fix
